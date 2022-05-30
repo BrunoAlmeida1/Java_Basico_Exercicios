@@ -8,10 +8,10 @@ public class AbonoSalarial {
         ArrayList<Double> salario = new ArrayList<Double>();
         ArrayList<Double> abono = new ArrayList<Double>();
 
-        System.out.println("\n==== ABONO SALARIAL ====");
+        System.out.println("\n===== ABONO SALARIAL =====");
         System.out.println("========================\n");
 
-        System.out.println("Cálculo do Abono");
+        System.out.println("CÃ¡lculo do Abono");
         System.out.println("----------------\n");
 
         calculaAbono(salario, abono);
@@ -22,7 +22,7 @@ public class AbonoSalarial {
         double salarioBase;
 
         do {
-            System.out.println("Informe o salário base: ");
+            System.out.println("Informe o salÃ¡rio base: ");
             salarioBase = sc.nextDouble();
 
             if(salarioBase != 0){
@@ -44,11 +44,11 @@ public class AbonoSalarial {
         double totalAbono = 0, maiorValor = 0;
         int valorMinimo = 0;
 
-        System.out.println("\nPROJEÇÃO DE GASTOS COM O ABONO SALARIAL");
+        System.out.println("\nPROJEÃ‡ÃƒO DE GASTOS COM O ABONO SALARIAL");
         System.out.println("=====================================\n");
 
         for (int i = 0; i < salario.size(); i++){
-            System.out.printf("Salário: %.2f\n", salario.get(i));
+            System.out.printf("SalÃ¡rio: %.2f\n", salario.get(i));
 
             totalAbono += abono.get(i);
 
@@ -59,7 +59,7 @@ public class AbonoSalarial {
                 maiorValor = abono.get(i);
             }
         }
-        System.out.println("\nSalário  | Abono");
+        System.out.println("\nSalÃ¡rio  | Abono");
         System.out.println("-----------------");
 
         for (int i = 0; i < salario.size(); i++){
@@ -67,7 +67,7 @@ public class AbonoSalarial {
         }
         System.out.printf("\nForam processados %d colaboradores\n", salario.size());
         System.out.printf("Total de gastos com abonos: %.2f\n", totalAbono);
-        System.out.printf("Valor mínimo pago a %d colaboradores\n", valorMinimo);
+        System.out.printf("Valor mÃ­nimo pago a %d colaboradores\n", valorMinimo);
         System.out.printf("Maior valor de abono pago: %.2f\n", maiorValor);
     }
 }
